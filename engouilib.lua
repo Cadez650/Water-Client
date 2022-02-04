@@ -5,6 +5,7 @@ local RS = game:GetService("RunService")
 local UIS = game:GetService("UserInputService")
 local Keys = loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/roblox/main/AlphanumericKeys.lua"))()
 local rainbowvalue = 0.01
+print("Intilizing EngoUI")
 
 -- Themes
 EngoThemes = {

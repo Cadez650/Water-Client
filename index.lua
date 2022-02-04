@@ -18,6 +18,7 @@ local function getScript(URL)
 end
 
 local currentGame = game.PlacedId;
+local guiLib = getScript("engouilib.lua");
 
 print(currentGame .. " : " .. game.Name);
 loadstring(getScript("games/"..currentGame..".lua"))();
