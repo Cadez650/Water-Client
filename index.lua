@@ -13,10 +13,11 @@ local function getScript(URL)
         return readfile('Water/'..URL)
     else
         print("Reading from Repo: "..URL)
-        return 
+        return game:HttpGet("https://raw.githubusercontent.com/Cadez650/Water-Client/main/"..URL, true)
     end
 end
 
 local currentGame = game.PlacedId;
 
-print(currentGame);
+print(currentGame .. " : " .. game.Name);
+loadstring(getScript("games/"..currentGame..".lua"))();
