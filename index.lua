@@ -8,7 +8,7 @@ local games = {
 };
 
 local function getScript(URL)
-    if global.VapeDev[game.Players.LocalPlayer] then
+    if global.VapeDev[game.Players.LocalPlayer] and readfile then
         print("[VapeDev] "..URL)
         return readfile('Water/'..URL)
     else
